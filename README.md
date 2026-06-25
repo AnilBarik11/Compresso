@@ -1,4 +1,4 @@
-# Compresso 
+# Compresso  : Token Reducing Platform 
 
 **Compresso** is a local bridge written in Python which improves the experience of interacting with Google Gemini by providing intelligent, token-saving compression of large documents and text prompts from the browser.
 
