@@ -49,7 +49,6 @@
                     btnCompress.disabled = false;
                     try {
                         const data = JSON.parse(res.responseText);
-                        // --- APPENDED TEXT FOR COMPRESS BUTTON ---
                         inputBox.innerText = data.compressed_text;
                         inputBox.dispatchEvent(new Event('input', { bubbles: true }));
                     } catch (e) { alert("Parsing Error"); }
@@ -92,7 +91,6 @@
                     const data = JSON.parse(res.responseText);
                     const { inputBox } = getElements();
                     if (inputBox && data.compressed_text) {
-                        // --- APPENDED TEXT FOR UPLOAD BUTTON ---
                         inputBox.innerText += "\n" + data.compressed_text;
                         inputBox.dispatchEvent(new Event('input', { bubbles: true }));
                     } else { alert("Server returned error: " + (data.detail || "Unknown")); }
