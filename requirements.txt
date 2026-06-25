@@ -1,0 +1,9 @@
+fastapi 
+uvicorn 
+spacy 
+llmlingua 
+tiktoken 
+google-genai 
+pypdf 
+python-docx 
+python-multipart
